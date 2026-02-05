@@ -270,7 +270,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="Automatically answer WebClicker polls")
-    parser.add_argument("--url", type=str, required=True, help="WebClicker URL")
+    parser.add_argument("--url", type=str, default="https://webclicker.web.app/student/", help="WebClicker URL")
     parser.add_argument("--interval", type=int, default=5, help="Poll check interval in seconds")
     parser.add_argument("--headless", action="store_true", help="Run in headless mode")
     parser.add_argument("--username", type=str, help="Username for login")
